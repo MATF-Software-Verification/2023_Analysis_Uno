@@ -1,0 +1,3 @@
+tests/catch.hpp
+tests/exec
+!tests/exec/exec.sh
