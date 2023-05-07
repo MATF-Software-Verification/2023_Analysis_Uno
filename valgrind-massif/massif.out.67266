@@ -1,0 +1,775 @@
+desc: (none)
+cmd: ./UNO
+time_unit: i
+#-----------
+snapshot=0
+#-----------
+time=0
+mem_heap_B=0
+mem_heap_extra_B=0
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=1
+#-----------
+time=2370350
+mem_heap_B=72704
+mem_heap_extra_B=8
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=2
+#-----------
+time=2943992
+mem_heap_B=84424
+mem_heap_extra_B=64
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=3
+#-----------
+time=3708205
+mem_heap_B=86530
+mem_heap_extra_B=126
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=4
+#-----------
+time=4755673
+mem_heap_B=88337
+mem_heap_extra_B=119
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=5
+#-----------
+time=5642212
+mem_heap_B=89986
+mem_heap_extra_B=134
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=6
+#-----------
+time=6365657
+mem_heap_B=93412
+mem_heap_extra_B=180
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=7
+#-----------
+time=7028693
+mem_heap_B=93379
+mem_heap_extra_B=157
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=8
+#-----------
+time=7491740
+mem_heap_B=93394
+mem_heap_extra_B=142
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=9
+#-----------
+time=8485631
+mem_heap_B=97005
+mem_heap_extra_B=171
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=10
+#-----------
+time=9139076
+mem_heap_B=96963
+mem_heap_extra_B=157
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=11
+#-----------
+time=10127710
+mem_heap_B=95941
+mem_heap_extra_B=131
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=12
+#-----------
+time=11128338
+mem_heap_B=96466
+mem_heap_extra_B=142
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=13
+#-----------
+time=11574520
+mem_heap_B=96994
+mem_heap_extra_B=166
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=14
+#-----------
+time=12195658
+mem_heap_B=101059
+mem_heap_extra_B=157
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=15
+#-----------
+time=12736177
+mem_heap_B=114370
+mem_heap_extra_B=150
+mem_stacks_B=0
+heap_tree=detailed
+n5: 114370 (heap allocation functions) malloc/new/new[], --alloc-fns, etc.
+ n1: 72704 0x490E979: ??? (in /usr/lib/x86_64-linux-gnu/libstdc++.so.6.0.30)
+  n1: 72704 0x400647D: call_init.part.0 (dl-init.c:70)
+   n1: 72704 0x4006567: call_init (dl-init.c:33)
+    n1: 72704 0x4006567: _dl_init (dl-init.c:117)
+     n0: 72704 0x40202E9: ??? (in /usr/lib/x86_64-linux-gnu/ld-linux-x86-64.so.2)
+ n1: 30528 0x1199EF: __gnu_cxx::new_allocator<kar::Karta>::allocate(unsigned long, void const*) (in /home/milica/Desktop/2023_Analysis_Uno/valgrind-massif/UNO)
+  n1: 30528 0x11845F: std::allocator_traits<std::allocator<kar::Karta> >::allocate(std::allocator<kar::Karta>&, unsigned long) (in /home/milica/Desktop/2023_Analysis_Uno/valgrind-massif/UNO)
+   n1: 30528 0x116F47: std::_Vector_base<kar::Karta, std::allocator<kar::Karta> >::_M_allocate(unsigned long) (in /home/milica/Desktop/2023_Analysis_Uno/valgrind-massif/UNO)
+    n1: 30528 0x1155E0: void std::vector<kar::Karta, std::allocator<kar::Karta> >::_M_realloc_insert<kar::Karta const&>(__gnu_cxx::__normal_iterator<kar::Karta*, std::vector<kar::Karta, std::allocator<kar::Karta> > >, kar::Karta const&) (in /home/milica/Desktop/2023_Analysis_Uno/valgrind-massif/UNO)
+     n5: 30528 0x114443: std::vector<kar::Karta, std::allocator<kar::Karta> >::push_back(kar::Karta const&) (in /home/milica/Desktop/2023_Analysis_Uno/valgrind-massif/UNO)
+      n2: 18432 0x10C26B: spil::Spil::Spil() (in /home/milica/Desktop/2023_Analysis_Uno/valgrind-massif/UNO)
+       n1: 18432 0x1116F3: igra::Igra::pripremi_sledecu_partiju() (in /home/milica/Desktop/2023_Analysis_Uno/valgrind-massif/UNO)
+        n1: 18432 0x11074E: igra::Igra::odigraj_partiju() (in /home/milica/Desktop/2023_Analysis_Uno/valgrind-massif/UNO)
+         n1: 18432 0x110669: igra::Igra::odigraj() (in /home/milica/Desktop/2023_Analysis_Uno/valgrind-massif/UNO)
+          n0: 18432 0x10AE31: main (in /home/milica/Desktop/2023_Analysis_Uno/valgrind-massif/UNO)
+       n0: 0 in 2 places, all below massif's threshold (1.00%)
+      n2: 4608 0x10BFC0: spil::Spil::Spil() (in /home/milica/Desktop/2023_Analysis_Uno/valgrind-massif/UNO)
+       n1: 4608 0x1116F3: igra::Igra::pripremi_sledecu_partiju() (in /home/milica/Desktop/2023_Analysis_Uno/valgrind-massif/UNO)
+        n1: 4608 0x11074E: igra::Igra::odigraj_partiju() (in /home/milica/Desktop/2023_Analysis_Uno/valgrind-massif/UNO)
+         n1: 4608 0x110669: igra::Igra::odigraj() (in /home/milica/Desktop/2023_Analysis_Uno/valgrind-massif/UNO)
+          n0: 4608 0x10AE31: main (in /home/milica/Desktop/2023_Analysis_Uno/valgrind-massif/UNO)
+       n0: 0 in 2 places, all below massif's threshold (1.00%)
+      n1: 4608 0x110C45: igra::Igra::odigraj_potez(int) (in /home/milica/Desktop/2023_Analysis_Uno/valgrind-massif/UNO)
+       n1: 4608 0x110796: igra::Igra::odigraj_partiju() (in /home/milica/Desktop/2023_Analysis_Uno/valgrind-massif/UNO)
+        n1: 4608 0x110669: igra::Igra::odigraj() (in /home/milica/Desktop/2023_Analysis_Uno/valgrind-massif/UNO)
+         n0: 4608 0x10AE31: main (in /home/milica/Desktop/2023_Analysis_Uno/valgrind-massif/UNO)
+      n2: 2880 0x10DD10: Ig::Igrac::vuci(kar::Karta) (in /home/milica/Desktop/2023_Analysis_Uno/valgrind-massif/UNO)
+       n1: 1728 0x1118FD: igra::Igra::pripremi_sledecu_partiju() (in /home/milica/Desktop/2023_Analysis_Uno/valgrind-massif/UNO)
+        n1: 1728 0x11074E: igra::Igra::odigraj_partiju() (in /home/milica/Desktop/2023_Analysis_Uno/valgrind-massif/UNO)
+         n1: 1728 0x110669: igra::Igra::odigraj() (in /home/milica/Desktop/2023_Analysis_Uno/valgrind-massif/UNO)
+          n0: 1728 0x10AE31: main (in /home/milica/Desktop/2023_Analysis_Uno/valgrind-massif/UNO)
+       n1: 1152 0x1122D0: igra::Igra::dodeli_karte_igracu_na_potezu(int) (in /home/milica/Desktop/2023_Analysis_Uno/valgrind-massif/UNO)
+        n1: 1152 0x1120B7: igra::Igra::izvrsi_efekat_karte(kar::Karta const&, std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > const&) (in /home/milica/Desktop/2023_Analysis_Uno/valgrind-massif/UNO)
+         n1: 1152 0x110FE9: igra::Igra::odigraj_potez(int) (in /home/milica/Desktop/2023_Analysis_Uno/valgrind-massif/UNO)
+          n1: 1152 0x110796: igra::Igra::odigraj_partiju() (in /home/milica/Desktop/2023_Analysis_Uno/valgrind-massif/UNO)
+           n1: 1152 0x110669: igra::Igra::odigraj() (in /home/milica/Desktop/2023_Analysis_Uno/valgrind-massif/UNO)
+            n0: 1152 0x10AE31: main (in /home/milica/Desktop/2023_Analysis_Uno/valgrind-massif/UNO)
+      n0: 0 in 21 places, all below massif's threshold (1.00%)
+ n1: 8706 0x49B04A4: std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> >::reserve(unsigned long) (in /usr/lib/x86_64-linux-gnu/libstdc++.so.6.0.30)
+  n1: 8706 0x49A6922: std::__cxx11::basic_stringbuf<char, std::char_traits<char>, std::allocator<char> >::overflow(int) (in /usr/lib/x86_64-linux-gnu/libstdc++.so.6.0.30)
+   n1: 8706 0x49AE70A: std::basic_streambuf<char, std::char_traits<char> >::xsputn(char const*, long) (in /usr/lib/x86_64-linux-gnu/libstdc++.so.6.0.30)
+    n2: 8706 0x49A0B34: std::basic_ostream<char, std::char_traits<char> >& std::__ostream_insert<char, std::char_traits<char> >(std::basic_ostream<char, std::char_traits<char> >&, char const*, long) (in /usr/lib/x86_64-linux-gnu/libstdc++.so.6.0.30)
+     n1: 8193 0x112473: igra::Igra::dodeli_karte_igracu_na_potezu(int) (in /home/milica/Desktop/2023_Analysis_Uno/valgrind-massif/UNO)
+      n1: 8193 0x111EDC: igra::Igra::izvrsi_efekat_karte(kar::Karta const&, std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > const&) (in /home/milica/Desktop/2023_Analysis_Uno/valgrind-massif/UNO)
+       n1: 8193 0x110FE9: igra::Igra::odigraj_potez(int) (in /home/milica/Desktop/2023_Analysis_Uno/valgrind-massif/UNO)
+        n1: 8193 0x110796: igra::Igra::odigraj_partiju() (in /home/milica/Desktop/2023_Analysis_Uno/valgrind-massif/UNO)
+         n1: 8193 0x110669: igra::Igra::odigraj() (in /home/milica/Desktop/2023_Analysis_Uno/valgrind-massif/UNO)
+          n0: 8193 0x10AE31: main (in /home/milica/Desktop/2023_Analysis_Uno/valgrind-massif/UNO)
+     n0: 513 in 16 places, all below massif's threshold (1.00%)
+ n1: 2048 0x4B2CC23: _IO_file_doallocate (filedoalloc.c:101)
+  n1: 2048 0x4B3BD5F: _IO_doallocbuf (genops.c:347)
+   n0: 2048 in 2 places, all below massif's threshold (1.00%)
+ n0: 384 in 5 places, all below massif's threshold (1.00%)
+#-----------
+snapshot=16
+#-----------
+time=13261151
+mem_heap_B=101059
+mem_heap_extra_B=157
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=17
+#-----------
+time=13989403
+mem_heap_B=101059
+mem_heap_extra_B=157
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=18
+#-----------
+time=14530612
+mem_heap_B=100546
+mem_heap_extra_B=134
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=19
+#-----------
+time=15191418
+mem_heap_B=104578
+mem_heap_extra_B=150
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=20
+#-----------
+time=15873306
+mem_heap_B=102226
+mem_heap_extra_B=190
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=21
+#-----------
+time=16691844
+mem_heap_B=101635
+mem_heap_extra_B=157
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=22
+#-----------
+time=17677390
+mem_heap_B=100613
+mem_heap_extra_B=131
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=23
+#-----------
+time=18553132
+mem_heap_B=101635
+mem_heap_extra_B=157
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=24
+#-----------
+time=19216848
+mem_heap_B=101666
+mem_heap_extra_B=166
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=25
+#-----------
+time=19864018
+mem_heap_B=101273
+mem_heap_extra_B=135
+mem_stacks_B=0
+heap_tree=detailed
+n5: 101273 (heap allocation functions) malloc/new/new[], --alloc-fns, etc.
+ n1: 72704 0x490E979: ??? (in /usr/lib/x86_64-linux-gnu/libstdc++.so.6.0.30)
+  n1: 72704 0x400647D: call_init.part.0 (dl-init.c:70)
+   n1: 72704 0x4006567: call_init (dl-init.c:33)
+    n1: 72704 0x4006567: _dl_init (dl-init.c:117)
+     n0: 72704 0x40202E9: ??? (in /usr/lib/x86_64-linux-gnu/ld-linux-x86-64.so.2)
+ n1: 17928 0x1199EF: __gnu_cxx::new_allocator<kar::Karta>::allocate(unsigned long, void const*) (in /home/milica/Desktop/2023_Analysis_Uno/valgrind-massif/UNO)
+  n1: 17928 0x11845F: std::allocator_traits<std::allocator<kar::Karta> >::allocate(std::allocator<kar::Karta>&, unsigned long) (in /home/milica/Desktop/2023_Analysis_Uno/valgrind-massif/UNO)
+   n1: 17928 0x116F47: std::_Vector_base<kar::Karta, std::allocator<kar::Karta> >::_M_allocate(unsigned long) (in /home/milica/Desktop/2023_Analysis_Uno/valgrind-massif/UNO)
+    n1: 17928 0x1155E0: void std::vector<kar::Karta, std::allocator<kar::Karta> >::_M_realloc_insert<kar::Karta const&>(__gnu_cxx::__normal_iterator<kar::Karta*, std::vector<kar::Karta, std::allocator<kar::Karta> > >, kar::Karta const&) (in /home/milica/Desktop/2023_Analysis_Uno/valgrind-massif/UNO)
+     n4: 17928 0x114443: std::vector<kar::Karta, std::allocator<kar::Karta> >::push_back(kar::Karta const&) (in /home/milica/Desktop/2023_Analysis_Uno/valgrind-massif/UNO)
+      n2: 9216 0x10C26B: spil::Spil::Spil() (in /home/milica/Desktop/2023_Analysis_Uno/valgrind-massif/UNO)
+       n1: 9216 0x1116F3: igra::Igra::pripremi_sledecu_partiju() (in /home/milica/Desktop/2023_Analysis_Uno/valgrind-massif/UNO)
+        n1: 9216 0x11074E: igra::Igra::odigraj_partiju() (in /home/milica/Desktop/2023_Analysis_Uno/valgrind-massif/UNO)
+         n1: 9216 0x110669: igra::Igra::odigraj() (in /home/milica/Desktop/2023_Analysis_Uno/valgrind-massif/UNO)
+          n0: 9216 0x10AE31: main (in /home/milica/Desktop/2023_Analysis_Uno/valgrind-massif/UNO)
+       n0: 0 in 2 places, all below massif's threshold (1.00%)
+      n1: 4608 0x110C45: igra::Igra::odigraj_potez(int) (in /home/milica/Desktop/2023_Analysis_Uno/valgrind-massif/UNO)
+       n1: 4608 0x110796: igra::Igra::odigraj_partiju() (in /home/milica/Desktop/2023_Analysis_Uno/valgrind-massif/UNO)
+        n1: 4608 0x110669: igra::Igra::odigraj() (in /home/milica/Desktop/2023_Analysis_Uno/valgrind-massif/UNO)
+         n0: 4608 0x10AE31: main (in /home/milica/Desktop/2023_Analysis_Uno/valgrind-massif/UNO)
+      n2: 4032 0x10DD10: Ig::Igrac::vuci(kar::Karta) (in /home/milica/Desktop/2023_Analysis_Uno/valgrind-massif/UNO)
+       n1: 3456 0x1122D0: igra::Igra::dodeli_karte_igracu_na_potezu(int) (in /home/milica/Desktop/2023_Analysis_Uno/valgrind-massif/UNO)
+        n1: 3456 0x1120B7: igra::Igra::izvrsi_efekat_karte(kar::Karta const&, std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > const&) (in /home/milica/Desktop/2023_Analysis_Uno/valgrind-massif/UNO)
+         n1: 3456 0x110FE9: igra::Igra::odigraj_potez(int) (in /home/milica/Desktop/2023_Analysis_Uno/valgrind-massif/UNO)
+          n1: 3456 0x110796: igra::Igra::odigraj_partiju() (in /home/milica/Desktop/2023_Analysis_Uno/valgrind-massif/UNO)
+           n1: 3456 0x110669: igra::Igra::odigraj() (in /home/milica/Desktop/2023_Analysis_Uno/valgrind-massif/UNO)
+            n0: 3456 0x10AE31: main (in /home/milica/Desktop/2023_Analysis_Uno/valgrind-massif/UNO)
+       n0: 576 in 1 place, below massif's threshold (1.00%)
+      n0: 72 in 23 places, all below massif's threshold (1.00%)
+ n1: 8193 0x49B04A4: std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> >::reserve(unsigned long) (in /usr/lib/x86_64-linux-gnu/libstdc++.so.6.0.30)
+  n1: 8193 0x49A6922: std::__cxx11::basic_stringbuf<char, std::char_traits<char>, std::allocator<char> >::overflow(int) (in /usr/lib/x86_64-linux-gnu/libstdc++.so.6.0.30)
+   n1: 8193 0x49AE70A: std::basic_streambuf<char, std::char_traits<char> >::xsputn(char const*, long) (in /usr/lib/x86_64-linux-gnu/libstdc++.so.6.0.30)
+    n2: 8193 0x49A0B34: std::basic_ostream<char, std::char_traits<char> >& std::__ostream_insert<char, std::char_traits<char> >(std::basic_ostream<char, std::char_traits<char> >&, char const*, long) (in /usr/lib/x86_64-linux-gnu/libstdc++.so.6.0.30)
+     n1: 8193 0x112473: igra::Igra::dodeli_karte_igracu_na_potezu(int) (in /home/milica/Desktop/2023_Analysis_Uno/valgrind-massif/UNO)
+      n1: 8193 0x111EDC: igra::Igra::izvrsi_efekat_karte(kar::Karta const&, std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > const&) (in /home/milica/Desktop/2023_Analysis_Uno/valgrind-massif/UNO)
+       n1: 8193 0x110FE9: igra::Igra::odigraj_potez(int) (in /home/milica/Desktop/2023_Analysis_Uno/valgrind-massif/UNO)
+        n1: 8193 0x110796: igra::Igra::odigraj_partiju() (in /home/milica/Desktop/2023_Analysis_Uno/valgrind-massif/UNO)
+         n1: 8193 0x110669: igra::Igra::odigraj() (in /home/milica/Desktop/2023_Analysis_Uno/valgrind-massif/UNO)
+          n0: 8193 0x10AE31: main (in /home/milica/Desktop/2023_Analysis_Uno/valgrind-massif/UNO)
+     n0: 0 in 16 places, all below massif's threshold (1.00%)
+ n1: 2048 0x4B2CC23: _IO_file_doallocate (filedoalloc.c:101)
+  n2: 2048 0x4B3BD5F: _IO_doallocbuf (genops.c:347)
+   n1: 1024 0x4B3AD5B: _IO_file_underflow@@GLIBC_2.2.5 (fileops.c:485)
+    n1: 1024 0x4B3BE15: _IO_default_uflow (genops.c:362)
+     n1: 1024 0x49766F0: __gnu_cxx::stdio_sync_filebuf<char, std::char_traits<char> >::underflow() (in /usr/lib/x86_64-linux-gnu/libstdc++.so.6.0.30)
+      n1: 1024 0x49847F5: std::istream::sentry::sentry(std::istream&, bool) (in /usr/lib/x86_64-linux-gnu/libstdc++.so.6.0.30)
+       n1: 1024 0x492C1A6: std::basic_istream<char, std::char_traits<char> >& std::operator>><char, std::char_traits<char>, std::allocator<char> >(std::basic_istream<char, std::char_traits<char> >&, std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> >&) (in /usr/lib/x86_64-linux-gnu/libstdc++.so.6.0.30)
+        n1: 1024 0x10AAA3: igra::ispisi_uvodnu_poruku(std::vector<std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> >, std::allocator<std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > > >&) (in /home/milica/Desktop/2023_Analysis_Uno/valgrind-massif/UNO)
+         n0: 1024 0x10AE09: main (in /home/milica/Desktop/2023_Analysis_Uno/valgrind-massif/UNO)
+   n1: 1024 0x4B3AFDF: _IO_file_overflow@@GLIBC_2.2.5 (fileops.c:744)
+    n1: 1024 0x4B39754: _IO_new_file_xsputn (fileops.c:1243)
+     n1: 1024 0x4B39754: _IO_file_xsputn@@GLIBC_2.2.5 (fileops.c:1196)
+      n1: 1024 0x4B2E056: fwrite (iofwrite.c:39)
+       n1: 1024 0x49A0B34: std::basic_ostream<char, std::char_traits<char> >& std::__ostream_insert<char, std::char_traits<char> >(std::basic_ostream<char, std::char_traits<char> >&, char const*, long) (in /usr/lib/x86_64-linux-gnu/libstdc++.so.6.0.30)
+        n1: 1024 0x10AA04: igra::ispisi_uvodnu_poruku(std::vector<std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> >, std::allocator<std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > > >&) (in /home/milica/Desktop/2023_Analysis_Uno/valgrind-massif/UNO)
+         n0: 1024 0x10AE09: main (in /home/milica/Desktop/2023_Analysis_Uno/valgrind-massif/UNO)
+ n0: 400 in 5 places, all below massif's threshold (1.00%)
+#-----------
+snapshot=26
+#-----------
+time=20681756
+mem_heap_B=101698
+mem_heap_extra_B=134
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=27
+#-----------
+time=21336609
+mem_heap_B=101489
+mem_heap_extra_B=127
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=28
+#-----------
+time=22169161
+mem_heap_B=102211
+mem_heap_extra_B=157
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=29
+#-----------
+time=22820723
+mem_heap_B=101209
+mem_heap_extra_B=135
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=30
+#-----------
+time=23342362
+mem_heap_B=101189
+mem_heap_extra_B=131
+mem_stacks_B=0
+heap_tree=detailed
+n5: 101189 (heap allocation functions) malloc/new/new[], --alloc-fns, etc.
+ n1: 72704 0x490E979: ??? (in /usr/lib/x86_64-linux-gnu/libstdc++.so.6.0.30)
+  n1: 72704 0x400647D: call_init.part.0 (dl-init.c:70)
+   n1: 72704 0x4006567: call_init (dl-init.c:33)
+    n1: 72704 0x4006567: _dl_init (dl-init.c:117)
+     n0: 72704 0x40202E9: ??? (in /usr/lib/x86_64-linux-gnu/ld-linux-x86-64.so.2)
+ n1: 17856 0x1199EF: __gnu_cxx::new_allocator<kar::Karta>::allocate(unsigned long, void const*) (in /home/milica/Desktop/2023_Analysis_Uno/valgrind-massif/UNO)
+  n1: 17856 0x11845F: std::allocator_traits<std::allocator<kar::Karta> >::allocate(std::allocator<kar::Karta>&, unsigned long) (in /home/milica/Desktop/2023_Analysis_Uno/valgrind-massif/UNO)
+   n1: 17856 0x116F47: std::_Vector_base<kar::Karta, std::allocator<kar::Karta> >::_M_allocate(unsigned long) (in /home/milica/Desktop/2023_Analysis_Uno/valgrind-massif/UNO)
+    n1: 17856 0x1155E0: void std::vector<kar::Karta, std::allocator<kar::Karta> >::_M_realloc_insert<kar::Karta const&>(__gnu_cxx::__normal_iterator<kar::Karta*, std::vector<kar::Karta, std::allocator<kar::Karta> > >, kar::Karta const&) (in /home/milica/Desktop/2023_Analysis_Uno/valgrind-massif/UNO)
+     n4: 17856 0x114443: std::vector<kar::Karta, std::allocator<kar::Karta> >::push_back(kar::Karta const&) (in /home/milica/Desktop/2023_Analysis_Uno/valgrind-massif/UNO)
+      n2: 9216 0x10C26B: spil::Spil::Spil() (in /home/milica/Desktop/2023_Analysis_Uno/valgrind-massif/UNO)
+       n1: 9216 0x1116F3: igra::Igra::pripremi_sledecu_partiju() (in /home/milica/Desktop/2023_Analysis_Uno/valgrind-massif/UNO)
+        n1: 9216 0x11074E: igra::Igra::odigraj_partiju() (in /home/milica/Desktop/2023_Analysis_Uno/valgrind-massif/UNO)
+         n1: 9216 0x110669: igra::Igra::odigraj() (in /home/milica/Desktop/2023_Analysis_Uno/valgrind-massif/UNO)
+          n0: 9216 0x10AE31: main (in /home/milica/Desktop/2023_Analysis_Uno/valgrind-massif/UNO)
+       n0: 0 in 2 places, all below massif's threshold (1.00%)
+      n1: 4608 0x110C45: igra::Igra::odigraj_potez(int) (in /home/milica/Desktop/2023_Analysis_Uno/valgrind-massif/UNO)
+       n1: 4608 0x110796: igra::Igra::odigraj_partiju() (in /home/milica/Desktop/2023_Analysis_Uno/valgrind-massif/UNO)
+        n1: 4608 0x110669: igra::Igra::odigraj() (in /home/milica/Desktop/2023_Analysis_Uno/valgrind-massif/UNO)
+         n0: 4608 0x10AE31: main (in /home/milica/Desktop/2023_Analysis_Uno/valgrind-massif/UNO)
+      n2: 4032 0x10DD10: Ig::Igrac::vuci(kar::Karta) (in /home/milica/Desktop/2023_Analysis_Uno/valgrind-massif/UNO)
+       n1: 3456 0x1122D0: igra::Igra::dodeli_karte_igracu_na_potezu(int) (in /home/milica/Desktop/2023_Analysis_Uno/valgrind-massif/UNO)
+        n1: 3456 0x1120B7: igra::Igra::izvrsi_efekat_karte(kar::Karta const&, std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > const&) (in /home/milica/Desktop/2023_Analysis_Uno/valgrind-massif/UNO)
+         n1: 3456 0x110FE9: igra::Igra::odigraj_potez(int) (in /home/milica/Desktop/2023_Analysis_Uno/valgrind-massif/UNO)
+          n1: 3456 0x110796: igra::Igra::odigraj_partiju() (in /home/milica/Desktop/2023_Analysis_Uno/valgrind-massif/UNO)
+           n1: 3456 0x110669: igra::Igra::odigraj() (in /home/milica/Desktop/2023_Analysis_Uno/valgrind-massif/UNO)
+            n0: 3456 0x10AE31: main (in /home/milica/Desktop/2023_Analysis_Uno/valgrind-massif/UNO)
+       n0: 576 in 1 place, below massif's threshold (1.00%)
+      n0: 0 in 23 places, all below massif's threshold (1.00%)
+ n1: 8193 0x49B04A4: std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> >::reserve(unsigned long) (in /usr/lib/x86_64-linux-gnu/libstdc++.so.6.0.30)
+  n1: 8193 0x49A6922: std::__cxx11::basic_stringbuf<char, std::char_traits<char>, std::allocator<char> >::overflow(int) (in /usr/lib/x86_64-linux-gnu/libstdc++.so.6.0.30)
+   n1: 8193 0x49AE70A: std::basic_streambuf<char, std::char_traits<char> >::xsputn(char const*, long) (in /usr/lib/x86_64-linux-gnu/libstdc++.so.6.0.30)
+    n2: 8193 0x49A0B34: std::basic_ostream<char, std::char_traits<char> >& std::__ostream_insert<char, std::char_traits<char> >(std::basic_ostream<char, std::char_traits<char> >&, char const*, long) (in /usr/lib/x86_64-linux-gnu/libstdc++.so.6.0.30)
+     n1: 8193 0x112473: igra::Igra::dodeli_karte_igracu_na_potezu(int) (in /home/milica/Desktop/2023_Analysis_Uno/valgrind-massif/UNO)
+      n1: 8193 0x111EDC: igra::Igra::izvrsi_efekat_karte(kar::Karta const&, std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > const&) (in /home/milica/Desktop/2023_Analysis_Uno/valgrind-massif/UNO)
+       n1: 8193 0x110FE9: igra::Igra::odigraj_potez(int) (in /home/milica/Desktop/2023_Analysis_Uno/valgrind-massif/UNO)
+        n1: 8193 0x110796: igra::Igra::odigraj_partiju() (in /home/milica/Desktop/2023_Analysis_Uno/valgrind-massif/UNO)
+         n1: 8193 0x110669: igra::Igra::odigraj() (in /home/milica/Desktop/2023_Analysis_Uno/valgrind-massif/UNO)
+          n0: 8193 0x10AE31: main (in /home/milica/Desktop/2023_Analysis_Uno/valgrind-massif/UNO)
+     n0: 0 in 16 places, all below massif's threshold (1.00%)
+ n1: 2048 0x4B2CC23: _IO_file_doallocate (filedoalloc.c:101)
+  n2: 2048 0x4B3BD5F: _IO_doallocbuf (genops.c:347)
+   n1: 1024 0x4B3AD5B: _IO_file_underflow@@GLIBC_2.2.5 (fileops.c:485)
+    n1: 1024 0x4B3BE15: _IO_default_uflow (genops.c:362)
+     n1: 1024 0x49766F0: __gnu_cxx::stdio_sync_filebuf<char, std::char_traits<char> >::underflow() (in /usr/lib/x86_64-linux-gnu/libstdc++.so.6.0.30)
+      n1: 1024 0x49847F5: std::istream::sentry::sentry(std::istream&, bool) (in /usr/lib/x86_64-linux-gnu/libstdc++.so.6.0.30)
+       n1: 1024 0x492C1A6: std::basic_istream<char, std::char_traits<char> >& std::operator>><char, std::char_traits<char>, std::allocator<char> >(std::basic_istream<char, std::char_traits<char> >&, std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> >&) (in /usr/lib/x86_64-linux-gnu/libstdc++.so.6.0.30)
+        n1: 1024 0x10AAA3: igra::ispisi_uvodnu_poruku(std::vector<std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> >, std::allocator<std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > > >&) (in /home/milica/Desktop/2023_Analysis_Uno/valgrind-massif/UNO)
+         n0: 1024 0x10AE09: main (in /home/milica/Desktop/2023_Analysis_Uno/valgrind-massif/UNO)
+   n1: 1024 0x4B3AFDF: _IO_file_overflow@@GLIBC_2.2.5 (fileops.c:744)
+    n1: 1024 0x4B39754: _IO_new_file_xsputn (fileops.c:1243)
+     n1: 1024 0x4B39754: _IO_file_xsputn@@GLIBC_2.2.5 (fileops.c:1196)
+      n1: 1024 0x4B2E056: fwrite (iofwrite.c:39)
+       n1: 1024 0x49A0B34: std::basic_ostream<char, std::char_traits<char> >& std::__ostream_insert<char, std::char_traits<char> >(std::basic_ostream<char, std::char_traits<char> >&, char const*, long) (in /usr/lib/x86_64-linux-gnu/libstdc++.so.6.0.30)
+        n1: 1024 0x10AA04: igra::ispisi_uvodnu_poruku(std::vector<std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> >, std::allocator<std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > > >&) (in /home/milica/Desktop/2023_Analysis_Uno/valgrind-massif/UNO)
+         n0: 1024 0x10AE09: main (in /home/milica/Desktop/2023_Analysis_Uno/valgrind-massif/UNO)
+ n0: 388 in 5 places, all below massif's threshold (1.00%)
+#-----------
+snapshot=31
+#-----------
+time=24262908
+mem_heap_B=128322
+mem_heap_extra_B=150
+mem_stacks_B=0
+heap_tree=peak
+n5: 128322 (heap allocation functions) malloc/new/new[], --alloc-fns, etc.
+ n1: 72704 0x490E979: ??? (in /usr/lib/x86_64-linux-gnu/libstdc++.so.6.0.30)
+  n1: 72704 0x400647D: call_init.part.0 (dl-init.c:70)
+   n1: 72704 0x4006567: call_init (dl-init.c:33)
+    n1: 72704 0x4006567: _dl_init (dl-init.c:117)
+     n0: 72704 0x40202E9: ??? (in /usr/lib/x86_64-linux-gnu/ld-linux-x86-64.so.2)
+ n1: 36288 0x1199EF: __gnu_cxx::new_allocator<kar::Karta>::allocate(unsigned long, void const*) (in /home/milica/Desktop/2023_Analysis_Uno/valgrind-massif/UNO)
+  n1: 36288 0x11845F: std::allocator_traits<std::allocator<kar::Karta> >::allocate(std::allocator<kar::Karta>&, unsigned long) (in /home/milica/Desktop/2023_Analysis_Uno/valgrind-massif/UNO)
+   n1: 36288 0x116F47: std::_Vector_base<kar::Karta, std::allocator<kar::Karta> >::_M_allocate(unsigned long) (in /home/milica/Desktop/2023_Analysis_Uno/valgrind-massif/UNO)
+    n1: 36288 0x1155E0: void std::vector<kar::Karta, std::allocator<kar::Karta> >::_M_realloc_insert<kar::Karta const&>(__gnu_cxx::__normal_iterator<kar::Karta*, std::vector<kar::Karta, std::allocator<kar::Karta> > >, kar::Karta const&) (in /home/milica/Desktop/2023_Analysis_Uno/valgrind-massif/UNO)
+     n5: 36288 0x114443: std::vector<kar::Karta, std::allocator<kar::Karta> >::push_back(kar::Karta const&) (in /home/milica/Desktop/2023_Analysis_Uno/valgrind-massif/UNO)
+      n2: 18432 0x10C26B: spil::Spil::Spil() (in /home/milica/Desktop/2023_Analysis_Uno/valgrind-massif/UNO)
+       n1: 18432 0x1116F3: igra::Igra::pripremi_sledecu_partiju() (in /home/milica/Desktop/2023_Analysis_Uno/valgrind-massif/UNO)
+        n1: 18432 0x11074E: igra::Igra::odigraj_partiju() (in /home/milica/Desktop/2023_Analysis_Uno/valgrind-massif/UNO)
+         n1: 18432 0x110669: igra::Igra::odigraj() (in /home/milica/Desktop/2023_Analysis_Uno/valgrind-massif/UNO)
+          n0: 18432 0x10AE31: main (in /home/milica/Desktop/2023_Analysis_Uno/valgrind-massif/UNO)
+       n0: 0 in 2 places, all below massif's threshold (1.00%)
+      n1: 9216 0x110C45: igra::Igra::odigraj_potez(int) (in /home/milica/Desktop/2023_Analysis_Uno/valgrind-massif/UNO)
+       n1: 9216 0x110796: igra::Igra::odigraj_partiju() (in /home/milica/Desktop/2023_Analysis_Uno/valgrind-massif/UNO)
+        n1: 9216 0x110669: igra::Igra::odigraj() (in /home/milica/Desktop/2023_Analysis_Uno/valgrind-massif/UNO)
+         n0: 9216 0x10AE31: main (in /home/milica/Desktop/2023_Analysis_Uno/valgrind-massif/UNO)
+      n2: 4608 0x10BFC0: spil::Spil::Spil() (in /home/milica/Desktop/2023_Analysis_Uno/valgrind-massif/UNO)
+       n1: 4608 0x1116F3: igra::Igra::pripremi_sledecu_partiju() (in /home/milica/Desktop/2023_Analysis_Uno/valgrind-massif/UNO)
+        n1: 4608 0x11074E: igra::Igra::odigraj_partiju() (in /home/milica/Desktop/2023_Analysis_Uno/valgrind-massif/UNO)
+         n1: 4608 0x110669: igra::Igra::odigraj() (in /home/milica/Desktop/2023_Analysis_Uno/valgrind-massif/UNO)
+          n0: 4608 0x10AE31: main (in /home/milica/Desktop/2023_Analysis_Uno/valgrind-massif/UNO)
+       n0: 0 in 2 places, all below massif's threshold (1.00%)
+      n2: 4032 0x10DD10: Ig::Igrac::vuci(kar::Karta) (in /home/milica/Desktop/2023_Analysis_Uno/valgrind-massif/UNO)
+       n1: 3456 0x1122D0: igra::Igra::dodeli_karte_igracu_na_potezu(int) (in /home/milica/Desktop/2023_Analysis_Uno/valgrind-massif/UNO)
+        n1: 3456 0x1120B7: igra::Igra::izvrsi_efekat_karte(kar::Karta const&, std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > const&) (in /home/milica/Desktop/2023_Analysis_Uno/valgrind-massif/UNO)
+         n1: 3456 0x110FE9: igra::Igra::odigraj_potez(int) (in /home/milica/Desktop/2023_Analysis_Uno/valgrind-massif/UNO)
+          n1: 3456 0x110796: igra::Igra::odigraj_partiju() (in /home/milica/Desktop/2023_Analysis_Uno/valgrind-massif/UNO)
+           n1: 3456 0x110669: igra::Igra::odigraj() (in /home/milica/Desktop/2023_Analysis_Uno/valgrind-massif/UNO)
+            n0: 3456 0x10AE31: main (in /home/milica/Desktop/2023_Analysis_Uno/valgrind-massif/UNO)
+       n0: 576 in 1 place, below massif's threshold (1.00%)
+      n0: 0 in 22 places, all below massif's threshold (1.00%)
+ n1: 16898 0x49B04A4: std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> >::reserve(unsigned long) (in /usr/lib/x86_64-linux-gnu/libstdc++.so.6.0.30)
+  n1: 16898 0x49A6922: std::__cxx11::basic_stringbuf<char, std::char_traits<char>, std::allocator<char> >::overflow(int) (in /usr/lib/x86_64-linux-gnu/libstdc++.so.6.0.30)
+   n1: 16898 0x49AE70A: std::basic_streambuf<char, std::char_traits<char> >::xsputn(char const*, long) (in /usr/lib/x86_64-linux-gnu/libstdc++.so.6.0.30)
+    n2: 16898 0x49A0B34: std::basic_ostream<char, std::char_traits<char> >& std::__ostream_insert<char, std::char_traits<char> >(std::basic_ostream<char, std::char_traits<char> >&, char const*, long) (in /usr/lib/x86_64-linux-gnu/libstdc++.so.6.0.30)
+     n1: 16385 0x112AEB: igra::Igra::ispisi_sledeceg_igraca() (in /home/milica/Desktop/2023_Analysis_Uno/valgrind-massif/UNO)
+      n1: 16385 0x11115B: igra::Igra::odigraj_potez(int) (in /home/milica/Desktop/2023_Analysis_Uno/valgrind-massif/UNO)
+       n1: 16385 0x110796: igra::Igra::odigraj_partiju() (in /home/milica/Desktop/2023_Analysis_Uno/valgrind-massif/UNO)
+        n1: 16385 0x110669: igra::Igra::odigraj() (in /home/milica/Desktop/2023_Analysis_Uno/valgrind-massif/UNO)
+         n0: 16385 0x10AE31: main (in /home/milica/Desktop/2023_Analysis_Uno/valgrind-massif/UNO)
+     n0: 513 in 16 places, all below massif's threshold (1.00%)
+ n1: 2048 0x4B2CC23: _IO_file_doallocate (filedoalloc.c:101)
+  n1: 2048 0x4B3BD5F: _IO_doallocbuf (genops.c:347)
+   n0: 2048 in 2 places, all below massif's threshold (1.00%)
+ n0: 384 in 5 places, all below massif's threshold (1.00%)
+#-----------
+snapshot=32
+#-----------
+time=24793350
+mem_heap_B=115011
+mem_heap_extra_B=157
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=33
+#-----------
+time=25836973
+mem_heap_B=115011
+mem_heap_extra_B=157
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=34
+#-----------
+time=26358396
+mem_heap_B=115524
+mem_heap_extra_B=180
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=35
+#-----------
+time=26889629
+mem_heap_B=114498
+mem_heap_extra_B=134
+mem_stacks_B=0
+heap_tree=detailed
+n5: 114498 (heap allocation functions) malloc/new/new[], --alloc-fns, etc.
+ n1: 72704 0x490E979: ??? (in /usr/lib/x86_64-linux-gnu/libstdc++.so.6.0.30)
+  n1: 72704 0x400647D: call_init.part.0 (dl-init.c:70)
+   n1: 72704 0x4006567: call_init (dl-init.c:33)
+    n1: 72704 0x4006567: _dl_init (dl-init.c:117)
+     n0: 72704 0x40202E9: ??? (in /usr/lib/x86_64-linux-gnu/ld-linux-x86-64.so.2)
+ n1: 22464 0x1199EF: __gnu_cxx::new_allocator<kar::Karta>::allocate(unsigned long, void const*) (in /home/milica/Desktop/2023_Analysis_Uno/valgrind-massif/UNO)
+  n1: 22464 0x11845F: std::allocator_traits<std::allocator<kar::Karta> >::allocate(std::allocator<kar::Karta>&, unsigned long) (in /home/milica/Desktop/2023_Analysis_Uno/valgrind-massif/UNO)
+   n1: 22464 0x116F47: std::_Vector_base<kar::Karta, std::allocator<kar::Karta> >::_M_allocate(unsigned long) (in /home/milica/Desktop/2023_Analysis_Uno/valgrind-massif/UNO)
+    n1: 22464 0x1155E0: void std::vector<kar::Karta, std::allocator<kar::Karta> >::_M_realloc_insert<kar::Karta const&>(__gnu_cxx::__normal_iterator<kar::Karta*, std::vector<kar::Karta, std::allocator<kar::Karta> > >, kar::Karta const&) (in /home/milica/Desktop/2023_Analysis_Uno/valgrind-massif/UNO)
+     n4: 22464 0x114443: std::vector<kar::Karta, std::allocator<kar::Karta> >::push_back(kar::Karta const&) (in /home/milica/Desktop/2023_Analysis_Uno/valgrind-massif/UNO)
+      n2: 9216 0x10C26B: spil::Spil::Spil() (in /home/milica/Desktop/2023_Analysis_Uno/valgrind-massif/UNO)
+       n1: 9216 0x1116F3: igra::Igra::pripremi_sledecu_partiju() (in /home/milica/Desktop/2023_Analysis_Uno/valgrind-massif/UNO)
+        n1: 9216 0x11074E: igra::Igra::odigraj_partiju() (in /home/milica/Desktop/2023_Analysis_Uno/valgrind-massif/UNO)
+         n1: 9216 0x110669: igra::Igra::odigraj() (in /home/milica/Desktop/2023_Analysis_Uno/valgrind-massif/UNO)
+          n0: 9216 0x10AE31: main (in /home/milica/Desktop/2023_Analysis_Uno/valgrind-massif/UNO)
+       n0: 0 in 2 places, all below massif's threshold (1.00%)
+      n1: 9216 0x110C45: igra::Igra::odigraj_potez(int) (in /home/milica/Desktop/2023_Analysis_Uno/valgrind-massif/UNO)
+       n1: 9216 0x110796: igra::Igra::odigraj_partiju() (in /home/milica/Desktop/2023_Analysis_Uno/valgrind-massif/UNO)
+        n1: 9216 0x110669: igra::Igra::odigraj() (in /home/milica/Desktop/2023_Analysis_Uno/valgrind-massif/UNO)
+         n0: 9216 0x10AE31: main (in /home/milica/Desktop/2023_Analysis_Uno/valgrind-massif/UNO)
+      n2: 4032 0x10DD10: Ig::Igrac::vuci(kar::Karta) (in /home/milica/Desktop/2023_Analysis_Uno/valgrind-massif/UNO)
+       n1: 3456 0x1122D0: igra::Igra::dodeli_karte_igracu_na_potezu(int) (in /home/milica/Desktop/2023_Analysis_Uno/valgrind-massif/UNO)
+        n1: 3456 0x1120B7: igra::Igra::izvrsi_efekat_karte(kar::Karta const&, std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > const&) (in /home/milica/Desktop/2023_Analysis_Uno/valgrind-massif/UNO)
+         n1: 3456 0x110FE9: igra::Igra::odigraj_potez(int) (in /home/milica/Desktop/2023_Analysis_Uno/valgrind-massif/UNO)
+          n1: 3456 0x110796: igra::Igra::odigraj_partiju() (in /home/milica/Desktop/2023_Analysis_Uno/valgrind-massif/UNO)
+           n1: 3456 0x110669: igra::Igra::odigraj() (in /home/milica/Desktop/2023_Analysis_Uno/valgrind-massif/UNO)
+            n0: 3456 0x10AE31: main (in /home/milica/Desktop/2023_Analysis_Uno/valgrind-massif/UNO)
+       n0: 576 in 1 place, below massif's threshold (1.00%)
+      n0: 0 in 23 places, all below massif's threshold (1.00%)
+ n1: 16898 0x49B04A4: std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> >::reserve(unsigned long) (in /usr/lib/x86_64-linux-gnu/libstdc++.so.6.0.30)
+  n1: 16898 0x49A6922: std::__cxx11::basic_stringbuf<char, std::char_traits<char>, std::allocator<char> >::overflow(int) (in /usr/lib/x86_64-linux-gnu/libstdc++.so.6.0.30)
+   n1: 16898 0x49AE70A: std::basic_streambuf<char, std::char_traits<char> >::xsputn(char const*, long) (in /usr/lib/x86_64-linux-gnu/libstdc++.so.6.0.30)
+    n2: 16898 0x49A0B34: std::basic_ostream<char, std::char_traits<char> >& std::__ostream_insert<char, std::char_traits<char> >(std::basic_ostream<char, std::char_traits<char> >&, char const*, long) (in /usr/lib/x86_64-linux-gnu/libstdc++.so.6.0.30)
+     n1: 16385 0x112AEB: igra::Igra::ispisi_sledeceg_igraca() (in /home/milica/Desktop/2023_Analysis_Uno/valgrind-massif/UNO)
+      n1: 16385 0x11115B: igra::Igra::odigraj_potez(int) (in /home/milica/Desktop/2023_Analysis_Uno/valgrind-massif/UNO)
+       n1: 16385 0x110796: igra::Igra::odigraj_partiju() (in /home/milica/Desktop/2023_Analysis_Uno/valgrind-massif/UNO)
+        n1: 16385 0x110669: igra::Igra::odigraj() (in /home/milica/Desktop/2023_Analysis_Uno/valgrind-massif/UNO)
+         n0: 16385 0x10AE31: main (in /home/milica/Desktop/2023_Analysis_Uno/valgrind-massif/UNO)
+     n0: 513 in 16 places, all below massif's threshold (1.00%)
+ n1: 2048 0x4B2CC23: _IO_file_doallocate (filedoalloc.c:101)
+  n1: 2048 0x4B3BD5F: _IO_doallocbuf (genops.c:347)
+   n0: 2048 in 2 places, all below massif's threshold (1.00%)
+ n0: 384 in 5 places, all below massif's threshold (1.00%)
+#-----------
+snapshot=36
+#-----------
+time=27412384
+mem_heap_B=114073
+mem_heap_extra_B=135
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=37
+#-----------
+time=27949087
+mem_heap_B=114570
+mem_heap_extra_B=150
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=38
+#-----------
+time=28482530
+mem_heap_B=115593
+mem_heap_extra_B=199
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=39
+#-----------
+time=29268900
+mem_heap_B=115011
+mem_heap_extra_B=157
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=40
+#-----------
+time=29797093
+mem_heap_B=114217
+mem_heap_extra_B=143
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=41
+#-----------
+time=30582705
+mem_heap_B=113989
+mem_heap_extra_B=131
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=42
+#-----------
+time=31104505
+mem_heap_B=114001
+mem_heap_extra_B=119
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=43
+#-----------
+time=31693360
+mem_heap_B=114498
+mem_heap_extra_B=134
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=44
+#-----------
+time=32485662
+mem_heap_B=115042
+mem_heap_extra_B=166
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=45
+#-----------
+time=33281047
+mem_heap_B=114073
+mem_heap_extra_B=135
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=46
+#-----------
+time=33809535
+mem_heap_B=114498
+mem_heap_extra_B=134
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=47
+#-----------
+time=34363714
+mem_heap_B=128322
+mem_heap_extra_B=150
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=48
+#-----------
+time=35170599
+mem_heap_B=115042
+mem_heap_extra_B=166
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=49
+#-----------
+time=35691864
+mem_heap_B=114721
+mem_heap_extra_B=151
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=50
+#-----------
+time=36139054
+mem_heap_B=115618
+mem_heap_extra_B=166
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=51
+#-----------
+time=36603328
+mem_heap_B=128898
+mem_heap_extra_B=150
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=52
+#-----------
+time=37050277
+mem_heap_B=115587
+mem_heap_extra_B=157
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=53
+#-----------
+time=37497811
+mem_heap_B=114649
+mem_heap_extra_B=135
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=54
+#-----------
+time=37945336
+mem_heap_B=115081
+mem_heap_extra_B=175
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=55
+#-----------
+time=38391591
+mem_heap_B=115587
+mem_heap_extra_B=157
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=56
+#-----------
+time=38847678
+mem_heap_B=116180
+mem_heap_extra_B=212
+mem_stacks_B=0
+heap_tree=detailed
+n5: 116180 (heap allocation functions) malloc/new/new[], --alloc-fns, etc.
+ n1: 72704 0x490E979: ??? (in /usr/lib/x86_64-linux-gnu/libstdc++.so.6.0.30)
+  n1: 72704 0x400647D: call_init.part.0 (dl-init.c:70)
+   n1: 72704 0x4006567: call_init (dl-init.c:33)
+    n1: 72704 0x4006567: _dl_init (dl-init.c:117)
+     n0: 72704 0x40202E9: ??? (in /usr/lib/x86_64-linux-gnu/ld-linux-x86-64.so.2)
+ n1: 23040 0x1199EF: __gnu_cxx::new_allocator<kar::Karta>::allocate(unsigned long, void const*) (in /home/milica/Desktop/2023_Analysis_Uno/valgrind-massif/UNO)
+  n1: 23040 0x11845F: std::allocator_traits<std::allocator<kar::Karta> >::allocate(std::allocator<kar::Karta>&, unsigned long) (in /home/milica/Desktop/2023_Analysis_Uno/valgrind-massif/UNO)
+   n1: 23040 0x116F47: std::_Vector_base<kar::Karta, std::allocator<kar::Karta> >::_M_allocate(unsigned long) (in /home/milica/Desktop/2023_Analysis_Uno/valgrind-massif/UNO)
+    n1: 23040 0x1155E0: void std::vector<kar::Karta, std::allocator<kar::Karta> >::_M_realloc_insert<kar::Karta const&>(__gnu_cxx::__normal_iterator<kar::Karta*, std::vector<kar::Karta, std::allocator<kar::Karta> > >, kar::Karta const&) (in /home/milica/Desktop/2023_Analysis_Uno/valgrind-massif/UNO)
+     n4: 23040 0x114443: std::vector<kar::Karta, std::allocator<kar::Karta> >::push_back(kar::Karta const&) (in /home/milica/Desktop/2023_Analysis_Uno/valgrind-massif/UNO)
+      n2: 9216 0x10C26B: spil::Spil::Spil() (in /home/milica/Desktop/2023_Analysis_Uno/valgrind-massif/UNO)
+       n1: 9216 0x1116F3: igra::Igra::pripremi_sledecu_partiju() (in /home/milica/Desktop/2023_Analysis_Uno/valgrind-massif/UNO)
+        n1: 9216 0x11074E: igra::Igra::odigraj_partiju() (in /home/milica/Desktop/2023_Analysis_Uno/valgrind-massif/UNO)
+         n1: 9216 0x110669: igra::Igra::odigraj() (in /home/milica/Desktop/2023_Analysis_Uno/valgrind-massif/UNO)
+          n0: 9216 0x10AE31: main (in /home/milica/Desktop/2023_Analysis_Uno/valgrind-massif/UNO)
+       n0: 0 in 2 places, all below massif's threshold (1.00%)
+      n1: 9216 0x110C45: igra::Igra::odigraj_potez(int) (in /home/milica/Desktop/2023_Analysis_Uno/valgrind-massif/UNO)
+       n1: 9216 0x110796: igra::Igra::odigraj_partiju() (in /home/milica/Desktop/2023_Analysis_Uno/valgrind-massif/UNO)
+        n1: 9216 0x110669: igra::Igra::odigraj() (in /home/milica/Desktop/2023_Analysis_Uno/valgrind-massif/UNO)
+         n0: 9216 0x10AE31: main (in /home/milica/Desktop/2023_Analysis_Uno/valgrind-massif/UNO)
+      n2: 4608 0x10DD10: Ig::Igrac::vuci(kar::Karta) (in /home/milica/Desktop/2023_Analysis_Uno/valgrind-massif/UNO)
+       n1: 4608 0x1122D0: igra::Igra::dodeli_karte_igracu_na_potezu(int) (in /home/milica/Desktop/2023_Analysis_Uno/valgrind-massif/UNO)
+        n1: 4608 0x1120B7: igra::Igra::izvrsi_efekat_karte(kar::Karta const&, std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > const&) (in /home/milica/Desktop/2023_Analysis_Uno/valgrind-massif/UNO)
+         n1: 4608 0x110FE9: igra::Igra::odigraj_potez(int) (in /home/milica/Desktop/2023_Analysis_Uno/valgrind-massif/UNO)
+          n1: 4608 0x110796: igra::Igra::odigraj_partiju() (in /home/milica/Desktop/2023_Analysis_Uno/valgrind-massif/UNO)
+           n1: 4608 0x110669: igra::Igra::odigraj() (in /home/milica/Desktop/2023_Analysis_Uno/valgrind-massif/UNO)
+            n0: 4608 0x10AE31: main (in /home/milica/Desktop/2023_Analysis_Uno/valgrind-massif/UNO)
+       n0: 0 in 1 place, below massif's threshold (1.00%)
+      n0: 0 in 23 places, all below massif's threshold (1.00%)
+ n1: 17924 0x49B04A4: std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> >::reserve(unsigned long) (in /usr/lib/x86_64-linux-gnu/libstdc++.so.6.0.30)
+  n1: 17924 0x49A6922: std::__cxx11::basic_stringbuf<char, std::char_traits<char>, std::allocator<char> >::overflow(int) (in /usr/lib/x86_64-linux-gnu/libstdc++.so.6.0.30)
+   n1: 17924 0x49AE70A: std::basic_streambuf<char, std::char_traits<char> >::xsputn(char const*, long) (in /usr/lib/x86_64-linux-gnu/libstdc++.so.6.0.30)
+    n2: 17924 0x49A0B34: std::basic_ostream<char, std::char_traits<char> >& std::__ostream_insert<char, std::char_traits<char> >(std::basic_ostream<char, std::char_traits<char> >&, char const*, long) (in /usr/lib/x86_64-linux-gnu/libstdc++.so.6.0.30)
+     n1: 16385 0x112AEB: igra::Igra::ispisi_sledeceg_igraca() (in /home/milica/Desktop/2023_Analysis_Uno/valgrind-massif/UNO)
+      n1: 16385 0x11115B: igra::Igra::odigraj_potez(int) (in /home/milica/Desktop/2023_Analysis_Uno/valgrind-massif/UNO)
+       n1: 16385 0x110796: igra::Igra::odigraj_partiju() (in /home/milica/Desktop/2023_Analysis_Uno/valgrind-massif/UNO)
+        n1: 16385 0x110669: igra::Igra::odigraj() (in /home/milica/Desktop/2023_Analysis_Uno/valgrind-massif/UNO)
+         n0: 16385 0x10AE31: main (in /home/milica/Desktop/2023_Analysis_Uno/valgrind-massif/UNO)
+     n0: 1539 in 16 places, all below massif's threshold (1.00%)
+ n1: 2048 0x4B2CC23: _IO_file_doallocate (filedoalloc.c:101)
+  n1: 2048 0x4B3BD5F: _IO_doallocbuf (genops.c:347)
+   n0: 2048 in 2 places, all below massif's threshold (1.00%)
+ n0: 464 in 5 places, all below massif's threshold (1.00%)
+#-----------
+snapshot=57
+#-----------
+time=39296537
+mem_heap_B=116538
+mem_heap_extra_B=198
+mem_stacks_B=0
+heap_tree=empty

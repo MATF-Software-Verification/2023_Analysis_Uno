@@ -18,3 +18,5 @@ Pokretanje igre:
 - cach.hpp biblioteka sa gcovr
 - Valgrind - leak-check
 - Valgrind - callgrind
+- Valgrind - massif
+
