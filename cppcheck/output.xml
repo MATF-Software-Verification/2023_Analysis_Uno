@@ -1,0 +1,129 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<results version="2">
+    <cppcheck version="2.7"/>
+    <errors>
+        <error id="uninitMemberVar" severity="warning" msg="Member variable &apos;Igra::_indeks_igraca_na_potezu&apos; is not initialized in the constructor." verbose="Member variable &apos;Igra::_indeks_igraca_na_potezu&apos; is not initialized in the constructor." cwe="398" file0="../2020_Uno/test.cpp">
+            <location file="../2020_Uno/igra.h" line="24" column="2"/>
+            <symbol>Igra::_indeks_igraca_na_potezu</symbol>
+        </error>
+        <error id="unusedPrivateFunction" severity="style" msg="Unused private function: &apos;Igra::ispisi_spil_za_izbacivanje&apos;" verbose="Unused private function: &apos;Igra::ispisi_spil_za_izbacivanje&apos;" cwe="398" file0="../2020_Uno/test.cpp">
+            <location file="../2020_Uno/igra.h" line="433" column="7"/>
+            <symbol>Igra::ispisi_spil_za_izbacivanje</symbol>
+        </error>
+        <error id="useInitializationList" severity="performance" msg="Variable &apos;_boja&apos; is assigned in constructor body. Consider performing initialization in initialization list." verbose="When an object of a class is created, the constructors of all member variables are called consecutively in the order the variables are declared, even if you don&apos;t explicitly write them to the initialization list. You could avoid assigning &apos;_boja&apos; a value by passing the value to the constructor in the initialization list." cwe="398" file0="../2020_Uno/test.cpp">
+            <location file="../2020_Uno/karta.h" line="20" column="3"/>
+            <symbol>_boja</symbol>
+        </error>
+        <error id="useInitializationList" severity="performance" msg="Variable &apos;_boja&apos; is assigned in constructor body. Consider performing initialization in initialization list." verbose="When an object of a class is created, the constructors of all member variables are called consecutively in the order the variables are declared, even if you don&apos;t explicitly write them to the initialization list. You could avoid assigning &apos;_boja&apos; a value by passing the value to the constructor in the initialization list." cwe="398" file0="../2020_Uno/test.cpp">
+            <location file="../2020_Uno/karta.h" line="26" column="3"/>
+            <symbol>_boja</symbol>
+        </error>
+        <error id="useInitializationList" severity="performance" msg="Variable &apos;_znak&apos; is assigned in constructor body. Consider performing initialization in initialization list." verbose="When an object of a class is created, the constructors of all member variables are called consecutively in the order the variables are declared, even if you don&apos;t explicitly write them to the initialization list. You could avoid assigning &apos;_znak&apos; a value by passing the value to the constructor in the initialization list." cwe="398" file0="../2020_Uno/test.cpp">
+            <location file="../2020_Uno/karta.h" line="27" column="3"/>
+            <symbol>_znak</symbol>
+        </error>
+        <error id="useInitializationList" severity="performance" msg="Variable &apos;_boja&apos; is assigned in constructor body. Consider performing initialization in initialization list." verbose="When an object of a class is created, the constructors of all member variables are called consecutively in the order the variables are declared, even if you don&apos;t explicitly write them to the initialization list. You could avoid assigning &apos;_boja&apos; a value by passing the value to the constructor in the initialization list." cwe="398" file0="../2020_Uno/test.cpp">
+            <location file="../2020_Uno/karta.h" line="32" column="3"/>
+            <symbol>_boja</symbol>
+        </error>
+        <error id="useInitializationList" severity="performance" msg="Variable &apos;_znak&apos; is assigned in constructor body. Consider performing initialization in initialization list." verbose="When an object of a class is created, the constructors of all member variables are called consecutively in the order the variables are declared, even if you don&apos;t explicitly write them to the initialization list. You could avoid assigning &apos;_znak&apos; a value by passing the value to the constructor in the initialization list." cwe="398" file0="../2020_Uno/test.cpp">
+            <location file="../2020_Uno/karta.h" line="33" column="3"/>
+            <symbol>_znak</symbol>
+        </error>
+        <error id="useInitializationList" severity="performance" msg="Variable &apos;_spil&apos; is assigned in constructor body. Consider performing initialization in initialization list." verbose="When an object of a class is created, the constructors of all member variables are called consecutively in the order the variables are declared, even if you don&apos;t explicitly write them to the initialization list. You could avoid assigning &apos;_spil&apos; a value by passing the value to the constructor in the initialization list." cwe="398" file0="../2020_Uno/test.cpp">
+            <location file="../2020_Uno/spil.h" line="141" column="3"/>
+            <symbol>_spil</symbol>
+        </error>
+        <error id="useInitializationList" severity="performance" msg="Variable &apos;_ime&apos; is assigned in constructor body. Consider performing initialization in initialization list." verbose="When an object of a class is created, the constructors of all member variables are called consecutively in the order the variables are declared, even if you don&apos;t explicitly write them to the initialization list. You could avoid assigning &apos;_ime&apos; a value by passing the value to the constructor in the initialization list." cwe="398" file0="../2020_Uno/test.cpp">
+            <location file="../2020_Uno/igrac.h" line="16" column="3"/>
+            <symbol>_ime</symbol>
+        </error>
+        <error id="noExplicitConstructor" severity="style" msg="Class &apos;Spil&apos; has a constructor with 1 argument that is not explicit." verbose="Class &apos;Spil&apos; has a constructor with 1 argument that is not explicit. Such constructors should in general be explicit for type safety reasons. Using the explicit keyword in the constructor means some mistakes when using the class can be avoided." cwe="398" file0="../2020_Uno/test.cpp">
+            <location file="../2020_Uno/spil.h" line="140" column="2"/>
+            <symbol>Spil</symbol>
+        </error>
+        <error id="noExplicitConstructor" severity="style" msg="Class &apos;Igrac&apos; has a constructor with 1 argument that is not explicit." verbose="Class &apos;Igrac&apos; has a constructor with 1 argument that is not explicit. Such constructors should in general be explicit for type safety reasons. Using the explicit keyword in the constructor means some mistakes when using the class can be avoided." cwe="398" file0="../2020_Uno/test.cpp">
+            <location file="../2020_Uno/igrac.h" line="15" column="2"/>
+            <symbol>Igrac</symbol>
+        </error>
+        <error id="noExplicitConstructor" severity="style" msg="Class &apos;Igra&apos; has a constructor with 1 argument that is not explicit." verbose="Class &apos;Igra&apos; has a constructor with 1 argument that is not explicit. Such constructors should in general be explicit for type safety reasons. Using the explicit keyword in the constructor means some mistakes when using the class can be avoided." cwe="398" file0="../2020_Uno/test.cpp">
+            <location file="../2020_Uno/igra.h" line="24" column="2"/>
+            <symbol>Igra</symbol>
+        </error>
+        <error id="variableScope" severity="style" msg="The scope of the variable &apos;j&apos; can be reduced." verbose="The scope of the variable &apos;j&apos; can be reduced. Warning: Be careful when fixing this message, especially when there are inner loops. Here is an example where cppcheck will write that the scope for &apos;i&apos; can be reduced:\012void f(int x)\012{\012    int i = 0;\012    if (x) {\012        // it&apos;s safe to move &apos;int i = 0;&apos; here\012        for (int n = 0; n &lt; 10; ++n) {\012            // it is possible but not safe to move &apos;int i = 0;&apos; here\012            do_something(&amp;i);\012        }\012    }\012}\012When you see this message it is always safe to reduce the variable scope 1 level." cwe="398" file0="../2020_Uno/test.cpp">
+            <location file="../2020_Uno/spil.h" line="173" column="7"/>
+            <symbol>j</symbol>
+        </error>
+        <error id="shadowVariable" severity="style" msg="Local variable &apos;buffer&apos; shadows outer variable" verbose="Local variable &apos;buffer&apos; shadows outer variable" cwe="398" file0="../2020_Uno/test.cpp">
+            <location file="../2020_Uno/igra.h" line="283" column="19" info="Shadow variable"/>
+            <location file="../2020_Uno/igra.h" line="241" column="17" info="Shadowed declaration"/>
+            <symbol>buffer</symbol>
+        </error>
+        <error id="passedByValue" severity="performance" msg="Function parameter &apos;boja&apos; should be passed by const reference." verbose="Parameter &apos;boja&apos; is passed by value. It could be passed as a const reference which is usually faster and recommended in C++." cwe="398" file0="../2020_Uno/test.cpp">
+            <location file="../2020_Uno/karta.h" line="25" column="20"/>
+            <symbol>boja</symbol>
+        </error>
+        <error id="passedByValue" severity="performance" msg="Function parameter &apos;znak&apos; should be passed by const reference." verbose="Parameter &apos;znak&apos; is passed by value. It could be passed as a const reference which is usually faster and recommended in C++." cwe="398" file0="../2020_Uno/test.cpp">
+            <location file="../2020_Uno/karta.h" line="25" column="38"/>
+            <symbol>znak</symbol>
+        </error>
+        <error id="passedByValue" severity="performance" msg="Function parameter &apos;boja&apos; should be passed by const reference." verbose="Parameter &apos;boja&apos; is passed by value. It could be passed as a const reference which is usually faster and recommended in C++." cwe="398" file0="../2020_Uno/test.cpp">
+            <location file="../2020_Uno/karta.h" line="62" column="35"/>
+            <symbol>boja</symbol>
+        </error>
+        <error id="passedByValue" severity="performance" msg="Function parameter &apos;znak&apos; should be passed by const reference." verbose="Parameter &apos;znak&apos; is passed by value. It could be passed as a const reference which is usually faster and recommended in C++." cwe="398" file0="../2020_Uno/test.cpp">
+            <location file="../2020_Uno/karta.h" line="62" column="58"/>
+            <symbol>znak</symbol>
+        </error>
+        <error id="passedByValue" severity="performance" msg="Function parameter &apos;k1&apos; should be passed by const reference." verbose="Parameter &apos;k1&apos; is passed by value. It could be passed as a const reference which is usually faster and recommended in C++." cwe="398" file0="../2020_Uno/test.cpp">
+            <location file="../2020_Uno/karta.h" line="99" column="20"/>
+            <symbol>k1</symbol>
+        </error>
+        <error id="passedByValue" severity="performance" msg="Function parameter &apos;k2&apos; should be passed by const reference." verbose="Parameter &apos;k2&apos; is passed by value. It could be passed as a const reference which is usually faster and recommended in C++." cwe="398" file0="../2020_Uno/test.cpp">
+            <location file="../2020_Uno/karta.h" line="99" column="30"/>
+            <symbol>k2</symbol>
+        </error>
+        <error id="unreadVariable" severity="style" msg="Variable &apos;max&apos; is assigned a value that is never used." verbose="Variable &apos;max&apos; is assigned a value that is never used." cwe="563" file0="../2020_Uno/test.cpp">
+            <location file="../2020_Uno/igrac.h" line="167" column="8"/>
+            <symbol>max</symbol>
+        </error>
+        <error id="unreadVariable" severity="style" msg="Variable &apos;partija_zavrsena&apos; is assigned a value that is never used." verbose="Variable &apos;partija_zavrsena&apos; is assigned a value that is never used." cwe="563" file0="../2020_Uno/test.cpp">
+            <location file="../2020_Uno/igra.h" line="97" column="22"/>
+            <symbol>partija_zavrsena</symbol>
+        </error>
+        <error id="postfixOperator" severity="performance" msg="Prefer prefix ++/-- operators for non-primitive types." verbose="Prefix ++/-- operators should be preferred for non-primitive types. Pre-increment/decrement can be more efficient than post-increment/decrement. Post-increment/decrement usually involves keeping a copy of the previous value around and adds a little extra code." cwe="398" file0="../2020_Uno/test.cpp">
+            <location file="../2020_Uno/spil.h" line="191" column="45"/>
+        </error>
+        <error id="postfixOperator" severity="performance" msg="Prefer prefix ++/-- operators for non-primitive types." verbose="Prefix ++/-- operators should be preferred for non-primitive types. Pre-increment/decrement can be more efficient than post-increment/decrement. Post-increment/decrement usually involves keeping a copy of the previous value around and adds a little extra code." cwe="398" file0="../2020_Uno/test.cpp">
+            <location file="../2020_Uno/igrac.h" line="332" column="50"/>
+        </error>
+        <error id="postfixOperator" severity="performance" msg="Prefer prefix ++/-- operators for non-primitive types." verbose="Prefix ++/-- operators should be preferred for non-primitive types. Pre-increment/decrement can be more efficient than post-increment/decrement. Post-increment/decrement usually involves keeping a copy of the previous value around and adds a little extra code." cwe="398" file0="../2020_Uno/test.cpp">
+            <location file="../2020_Uno/igrac.h" line="361" column="71"/>
+        </error>
+        <error id="postfixOperator" severity="performance" msg="Prefer prefix ++/-- operators for non-primitive types." verbose="Prefix ++/-- operators should be preferred for non-primitive types. Pre-increment/decrement can be more efficient than post-increment/decrement. Post-increment/decrement usually involves keeping a copy of the previous value around and adds a little extra code." cwe="398" file0="../2020_Uno/test.cpp">
+            <location file="../2020_Uno/igrac.h" line="373" column="22"/>
+        </error>
+        <error id="postfixOperator" severity="performance" msg="Prefer prefix ++/-- operators for non-primitive types." verbose="Prefix ++/-- operators should be preferred for non-primitive types. Pre-increment/decrement can be more efficient than post-increment/decrement. Post-increment/decrement usually involves keeping a copy of the previous value around and adds a little extra code." cwe="398" file0="../2020_Uno/test.cpp">
+            <location file="../2020_Uno/igra.h" line="184" column="57"/>
+        </error>
+        <error id="postfixOperator" severity="performance" msg="Prefer prefix ++/-- operators for non-primitive types." verbose="Prefix ++/-- operators should be preferred for non-primitive types. Pre-increment/decrement can be more efficient than post-increment/decrement. Post-increment/decrement usually involves keeping a copy of the previous value around and adds a little extra code." cwe="398" file0="../2020_Uno/test.cpp">
+            <location file="../2020_Uno/igra.h" line="276" column="56"/>
+        </error>
+        <error id="postfixOperator" severity="performance" msg="Prefer prefix ++/-- operators for non-primitive types." verbose="Prefix ++/-- operators should be preferred for non-primitive types. Pre-increment/decrement can be more efficient than post-increment/decrement. Post-increment/decrement usually involves keeping a copy of the previous value around and adds a little extra code." cwe="398" file0="../2020_Uno/test.cpp">
+            <location file="../2020_Uno/igra.h" line="282" column="57"/>
+        </error>
+        <error id="postfixOperator" severity="performance" msg="Prefer prefix ++/-- operators for non-primitive types." verbose="Prefix ++/-- operators should be preferred for non-primitive types. Pre-increment/decrement can be more efficient than post-increment/decrement. Post-increment/decrement usually involves keeping a copy of the previous value around and adds a little extra code." cwe="398" file0="../2020_Uno/test.cpp">
+            <location file="../2020_Uno/igra.h" line="310" column="56"/>
+        </error>
+        <error id="postfixOperator" severity="performance" msg="Prefer prefix ++/-- operators for non-primitive types." verbose="Prefix ++/-- operators should be preferred for non-primitive types. Pre-increment/decrement can be more efficient than post-increment/decrement. Post-increment/decrement usually involves keeping a copy of the previous value around and adds a little extra code." cwe="398" file0="../2020_Uno/test.cpp">
+            <location file="../2020_Uno/igra.h" line="419" column="56"/>
+        </error>
+        <error id="postfixOperator" severity="performance" msg="Prefer prefix ++/-- operators for non-primitive types." verbose="Prefix ++/-- operators should be preferred for non-primitive types. Pre-increment/decrement can be more efficient than post-increment/decrement. Post-increment/decrement usually involves keeping a copy of the previous value around and adds a little extra code." cwe="398" file0="../2020_Uno/test.cpp">
+            <location file="../2020_Uno/igra.h" line="505" column="56"/>
+        </error>
+        <error id="postfixOperator" severity="performance" msg="Prefer prefix ++/-- operators for non-primitive types." verbose="Prefix ++/-- operators should be preferred for non-primitive types. Pre-increment/decrement can be more efficient than post-increment/decrement. Post-increment/decrement usually involves keeping a copy of the previous value around and adds a little extra code." cwe="398" file0="../2020_Uno/test.cpp">
+            <location file="../2020_Uno/igra.h" line="537" column="54"/>
+        </error>
+        <error id="missingIncludeSystem" severity="information" msg="Cppcheck cannot find all the include files (use --check-config for details)" verbose="Cppcheck cannot find all the include files. Cppcheck can check the code without the include files found. But the results will probably be more accurate if all the include files are found. Please check your project&apos;s include directories and add all of them as include directories for Cppcheck. To see what files Cppcheck cannot find use --check-config."/>
+    </errors>
+</results>
